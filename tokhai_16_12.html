@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Tiêu đề trang</title>
+    <link rel="stylesheet" href="./form.css" />
+    <!-- <style>
+      * {
+        font-family: "Calistoga", cursive;
+        font-family: "Taviraj", serif;
+        font-family: "Tinos", serif;
+      }
+      .footer {
+        /* position: fixed;
+        bottom: 0; */
+        width: 100%;
+        font-size: 13px;
+        color: #333;
+        text-align: center;
+      }
+
+      .pdf-box {
+        width: 190mm;
+        size: A4;
+        background-color: #ffffff;
+        font-size: 14px;
+      }
+
+      .border-black {
+        border: 1px solid black;
+        /* border-bottom: none; */
+        page-break-inside: avoid;
+        margin-top: -1px;
+      }
+
+      .bd-l-black {
+        border-left: 1px solid black;
+      }
+      .bd-b-black {
+        border-bottom: 1px solid black;
+      }
+      /* .bd-b-none {
+        border-bottom: none;
+      } */
+      .index-note {
+        margin-top: -2px;
+        font-size: 8px;
+        margin-right: 4px;
+      }
+
+      .d-flex {
+        display: flex !important;
+      }
+
+      .fl-1 {
+        flex: 1;
+      }
+
+      .fl-2 {
+        flex: 2;
+      }
+
+      .d-flex-center {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .d-flex-start {
+        display: flex !important;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+      .d-flex-ss {
+        display: flex !important;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+      .d-flex-ee {
+        display: flex !important;
+        justify-content: flex-end;
+        align-items: flex-end;
+      }
+
+      .d-flex-end {
+        display: flex !important;
+        justify-content: flex-end;
+        align-items: center;
+      }
+
+      .d-flex-sb {
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .flex-column {
+        flex-direction: column;
+      }
+
+      .fw-600 {
+        font-weight: 600;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
+      .text-right {
+        text-align: right;
+      }
+
+      .no-wrap {
+        white-space: nowrap;
+      }
+
+      .m-0 {
+        margin: 0px;
+      }
+
+      .mt-0 {
+        margin-top: 0px;
+      }
+
+      .mt-1 {
+        margin-top: 1px;
+      }
+
+      .mt-2 {
+        margin-top: 2px;
+      }
+
+      .mt-4 {
+        margin-top: 4px;
+      }
+      .mt-6 {
+        margin-top: 6px;
+      }
+
+      .mt-8 {
+        margin-top: 8px;
+      }
+
+      .mt-12 {
+        margin-top: 12px;
+      }
+
+      .mt-20 {
+        margin-top: 20px;
+      }
+
+      .mr-2 {
+        margin-right: 2px;
+      }
+      .mr-4 {
+        margin-right: 4px;
+      }
+
+      .ml-2 {
+        margin-left: 2px;
+      }
+
+      .ml-4 {
+        margin-left: 4px;
+      }
+
+      .ml-8 {
+        margin-left: 8px;
+      }
+
+      .ml-12 {
+        margin-left: 12px;
+      }
+
+      .ml-14 {
+        margin-left: 14px;
+      }
+
+      .ml-18 {
+        margin-left: 18px;
+      }
+
+      .mb-8 {
+        margin-bottom: 8px;
+      }
+      .mb-10 {
+        margin-bottom: 10px;
+      }
+      .mb-12 {
+        margin-bottom: 12px;
+      }
+      .mb-16 {
+        margin-bottom: 16px;
+      }
+      .mb-18 {
+        margin-bottom: 18px;
+      }
+      .mb-22 {
+        margin-bottom: 22px;
+      }
+      .mb-24 {
+        margin-bottom: 24px;
+      }
+
+      .mb-2 {
+        margin-bottom: 2px;
+      }
+
+      .mb-4 {
+        margin-bottom: 4px;
+      }
+      .mb-6 {
+        margin-bottom: 6px;
+      }
+
+      .ml-25 {
+        margin-left: 25px;
+      }
+
+      .pt-4 {
+        padding-top: 4px;
+      }
+
+      .pt-8 {
+        padding-top: 8px !important;
+      }
+
+      .pt-12 {
+        padding-top: 12px !important;
+      }
+
+      .pl-25 {
+        padding-left: 25px !important;
+      }
+
+      .p-4 {
+        padding: 4px;
+      }
+
+      .p-8 {
+        padding: 8px;
+      }
+
+      .pl-4 {
+        padding-left: 4px;
+      }
+
+      .pr-4 {
+        padding-right: 4px;
+      }
+
+      .pt-4 {
+        padding-top: 4px;
+      }
+
+      .pb-2 {
+        padding-bottom: 2px;
+      }
+
+      .pb-4 {
+        padding-bottom: 4px;
+      }
+
+      .pt-0 {
+        padding-top: 0px;
+      }
+
+      .fs-10 {
+        font-size: 10px;
+      }
+      .fs-12 {
+        font-size: 12px;
+      }
+
+      .fs-15 {
+        font-size: 15px;
+      }
+
+      .fs-18 {
+        font-size: 18px;
+      }
+
+      .h-20 {
+        height: 20px;
+      }
+
+      .relative {
+        position: relative;
+      }
+
+      /* ============================================================= */
+
+      .custom-checkbox {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #333;
+        color: #333;
+        margin-right: 2px;
+        font-size: 9px;
+        line-height: 0;
+        font-weight: 600;
+        height: 10px;
+        min-width: 10px;
+        width: 10px;
+      }
+
+      .circle-number {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        border: 2px solid black;
+        border-radius: 50%;
+        width: 18px;
+        height: 18px;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .circle-number-gray {
+        border: 2px solid #808080 !important;
+        color: #808080 !important;
+      }
+
+      .box-form-name {
+        display: flex !important;
+      }
+
+      .represent-code {
+        border: 1px solid black;
+        width: 120px;
+        height: 24px;
+        display: flex !important;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 3px;
+        margin-left: 12px;
+      }
+
+      .page-break {
+        page-break-before: always;
+      }
+    </style> -->
+  </head>
+  <body>
+    <div class="pdf-box">
+      <div>
+        <div class="d-flex-end mb-8"><b>Phụ lục IV - Mẫu số 01</b></div>
+        <div class="box-form-name">
+          <div class="fl-1">
+            <div class="text-center">
+              <span class="fw-600 fs-18">TỜ KHAI</span>
+              <p class="mt-0">ĐĂNG KÝ HỢP ĐỒNG CHUYỂN NHƯỢNG<br/>
+                QUYỀN SỞ HỮU CÔNG NGHIỆP</p>
+            </div>
+            <p class="ml-25">Kính gửi: CỤC SỞ HỮU TRÍ TUỆ</p>
+            <div class="ml-4">
+              Người nộp đơn dưới đây yêu cầu xem xét đơn và cấp
+              <div class="d-flex-start">
+                <p>Bằng độc quyền kiểu dáng công nghiệp <sup>1</sup></p>
+               
+              </div>
+            </div>
+          </div>
+          <div class="border-black fl-1 pt-4">
+            <div class="text-center fw-600">DẤU NHẬN ĐƠN</div>
+            <div class="text-center fs-12">
+              <i>(Dành cho cán bộ nhận đơn)</i>
+            </div>
+          </div>
+        </div>
+ <!-- Phần 1 -->
+        <div class="border-black p-4 relative">
+          <div class="circle-number">1</div>
+          <div class="text-center">
+            <div class="fw-600 text-center ml-60">NGƯỜI NỘP ĐƠN</div>
+            <div class="text-center mt-2">
+              (Tổ chức, cá nhân yêu cầu chuyển nhượng)
+            </div>
+          </div>
+
+          <div class="mt-4">Tên đầy đủ:</div>
+          <div class="mt-4">
+            Địa chỉ: 
+          </div>
+         
+          <div class="d-flex mt-4">
+            <div class="fl-1">Số căn cước công dân (nếu có):</div>
+            <div class="fl-1">Điện thoại: </div>
+            <div class="fl-1">Email: </div>
+          </div>
+          <div class="mt-4">
+            <div class="d-flex-start fl-1">
+              <div class="custom-checkbox mb-2"></div>
+              <div>
+                là bên chuyển nhượng
+              </div>
+            </div>
+
+            <div class="d-flex-start fl-1">
+              <div class="custom-checkbox mb-2"></div>
+              <div>
+                là bên nhận chuyển nhượng
+              </div>
+            </div>
+          </div>
+        </div>
+<!-- Phan 2 -->
+        <div class="border-black p-4 relative">
+          <div class="circle-number">2</div>
+          <div class="fw-600 text-center mb-8 ml-60">ĐẠI DIỆN CỦA NGƯỜI NỘP ĐƠN</div>
+
+          <div>
+            <div class="d-flex-start fl-1">
+              <div class="custom-checkbox mb-2"></div>
+              <div>là người đại diện theo pháp luật của người nộp đơn</div>
+            </div>
+
+            <div class="d-flex-start fl-1">
+              <div class="custom-checkbox mb-2"></div>
+              <div class="d-flex-start">
+                <div>
+                  là tổ chức dịch vụ đại diện sở hữu công nghiệp được uỷ quyền
+                  của người nộp đơn
+                </div>
+                <div class="represent-code ">Mã đại diện:</div>
+              </div>
+            </div>
+
+            <div class="d-flex-start fl-1">
+              <div class="custom-checkbox mb-2"></div>
+              <div>là người khác được uỷ quyền của người nộp đơn</div>
+            </div>
+          </div>
+
+          <div class="mt-8">Tên đầy đủ: </div>
+          <div class="mt-4">
+            Địa chỉ: 
+          </div>
+          <div class="d-flex mt-4">
+            <div class="fl-1">Điện thoại: </div>
+            <div class="fl-1">Email: </div>
+          </div>
+        </div>
+<!-- Phần 3 -->
+        <div class="border-black relative">
+          <div class="circle-number">3</div>
+          <div class="d-flex">
+            <div class="fl-2 text-center p-4">
+              <span class="fw-600 ml-25">ĐỐI TƯỢNG CỦA HỢP ĐỒNG</span>
+              <div class="pt-12" style="display: flex; align-items: center">
+                <span class="custom-checkbox"></span>
+                <span style="margin-left: 3px"
+                  >Bằng độc quyền sáng chế</span
+                >
+              </div>
+              <div class="pt-4" style="display: flex; align-items: center">
+                <span class="custom-checkbox"></span>
+                <span style="margin-left: 3px"
+                  >Bằng độc quyền giải pháp hữu ích</span
+                >
+              </div>
+              <div class="pt-4" style="display: flex; align-items: center">
+                <span class="custom-checkbox"></span>
+                <span style="margin-left: 3px"
+                  >Giấy chứng nhận đăng ký thiết kế bố trí mạch tích hợp bán dẫn</span
+                >
+              </div>
+              <div class="pt-4" style="display: flex; align-items: center">
+                <span class="custom-checkbox"></span>
+                <span style="margin-left: 3px"
+                  >Bằng độc quyền kiểu dáng công nghiệp</span
+                >
+              </div>
+              <div class="pt-4" style="display: flex; align-items: center">
+                <span class="custom-checkbox"></span>
+                <span style="margin-left: 3px"
+                  >Giấy chứng nhận đăng ký nhãn hiệu</span
+                >
+              </div>
+            </div>
+
+            <div class="fl-1 pr-4 bd-l-black p-4 pt-12">
+              <div >
+                Số văn bằng bảo hộ:
+              </div>
+            </div>
+          </div>
+        </div>
+      
+<!-- Phần 4 -->
+        <div class="border-black p-4 relative">
+          <div class="circle-number">4</div>
+          <div class="fw-600 text-center mb-8">BÊN THỨ HAI TRONG HỢP ĐỒNG (KHÔNG ĐỨNG TÊN NGƯỜI NỘP ĐƠN)</div>
+
+          <div class="mt-8 pt-12">Tên đầy đủ: </div>
+          <div class="mt-4">
+            Địa chỉ: 
+          </div>
+          <div class="d-flex mt-4">
+            <div class="fl-1">Điện thoại: </div>
+            <div class="fl-1">Email: </div>
+          </div>
+
+        </div>
+       
+      </div>
+      <!-- footer -->
+      <div>
+        <div class="footer">
+          <div
+            class="mb-8"
+            style="border-bottom: 1px solid black; width: 25%; height: 10px"
+          ></div>
+          <div>
+            <div class="d-flex">
+              <div class="index-note">1</div>
+              <div class="pb-2 d-flex-start">
+                Trong Tờ khai này, người nộp đơn/đại diện của người nộp đơn đánh
+                dấu "x" vào ô vuông
+                <span class="custom-checkbox ml-2 mr-2"></span> nếu các thông
+                tin ghi sau các ô vuông là phù hợp.
+              </div>
+            </div>
+
+           
+          </div>
+          <!-- <div class="text-center fs-12">-1-</div> -->
+          <div class="border-black bd-b-black relative">
+            <div class="circle-number circle-number-gray">7</div>
+            <p class="ml-25 pl-4" style="color: #808080; margin-top: 8px">
+              NGƯỜI NỘP ĐƠN/ĐẠI DIỆN CỦA NGƯỜI NỘP ĐƠN KÝ TÊN
+            </p>
+            <div style="height: 10px"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trang 2 -->
+      <div class="page-break">
+        <div class="text-center">2</div>
+        
+        <div class="relative">
+          <div class="border-black relative">
+            <div class="circle-number">5</div>
+            <div class="text-center fw-600 p-8">PHÍ, LỆ PHÍ</div>
+          </div>
+          <div class="d-flex">
+            <div class="border-black bd-r-none text-center pt-4 fw-600 fl-2">
+              Loại phí, lệ phí
+            </div>
+            <div class="border-black bd-r-none pl-4 text-center pt-4 fw-600 fl-1">
+              Số đối tượng tính phí
+            </div>
+            <div class="border-black text-center pt-4 fw-600 fl-1">Số tiền</div>
+          </div>
+        
+          <div class="d-flex">
+            <div class="border-black fl-2 bd-r-none">
+              <div style="display: flex; align-items: center; padding-left: 4px;">
+                <span class="custom-checkbox"></span>
+                <span style="margin-left: 3px"
+                  > Phí thẩm định hồ sơ đăng ký hợp đồng chuyển nhượng </span
+                >
+              </div>
+            </div>
+            <div class="border-black bd-r-none pl-4 fl-1">
+              1 văn bằng bảo hộ
+            </div>
+            <div class="border-black fl-1 text-center">100.000đ</div>
+          </div>
+
+          <div class="d-flex">
+            <div class="border-black bd-r-none fl-2">
+              <div style="display: flex; align-items: center; padding-left: 4px;">
+                <span class="custom-checkbox" style="margin-bottom: 18px;"></span>
+                <span style="margin-left: 3px"
+                  >  Phí tra cứu trùng hoặc tương tự của cùng chủ sở hữu phục vụ việc 
+                  thẩm định hồ sơ đăng ký hợp đồng chuyển nhượng </span
+                >
+              </div>
+            </div>
+            <div class="border-black bd-r-none pl-4 fl-1">
+              1 văn bằng bảo hộ
+            </div>
+            <div class="border-black  fl-1 text-center">100.000đ</div>
+          </div>
+
+          <div class="d-flex">
+            <div class="border-black bd-r-none fl-2">
+              <div style="display: flex; align-items: center; padding-left: 4px;">
+                <span class="custom-checkbox" style="margin-bottom: 18px;"></span>
+                <span style="margin-left: 3px"
+                  >  Phí thẩm định đơn (trường hợp chuyển nhượng nhãn hiệu tập thể, 
+                  nhãn hiệu chứng nhận)
+                   </span
+                >
+              </div>
+            </div>
+            <div class="border-black bd-r-none pl-4 fl-1">
+              
+            </div>
+            <div class="border-black  fl-1 text-center">100.000đ</div>
+          </div>
+
+          <div class="d-flex">
+            <div class="border-black bd-r-none fl-2">
+              <div style="display: flex; align-items: center; padding-left: 4px;">
+                <span class="custom-checkbox" style="margin-bottom: 32px;"></span>
+                <span style="margin-left: 3px"
+                  >   Lệ phí cấp Giấy chứng nhận đăng ký nhãn hiệu (trường hợp chuyển 
+                  nhượng một phần danh mục hàng hóa/dịch vụ mang nhãn hiệu)
+                   </span
+                >
+              </div>
+            </div>
+            <div class="border-black bd-r-none pl-4 fl-1">
+              
+            </div>
+            <div class="border-black fl-1 text-center">100.000đ</div>
+          </div>
+
+          <div class="d-flex">
+            <div class="border-black bd-r-none fl-2">
+              <div style="display: flex; align-items: center; padding-left: 4px;">
+                <span class="custom-checkbox" style="margin-bottom: 18px;"></span>
+                <span style="margin-left: 3px"
+                  >  Phí đăng bạ quyết định ghi nhận chuyển nhượng quyền sở hữu công 
+                  nghiệp  </span
+                >
+              </div>
+            </div>
+            <div class="border-black bd-r-none pl-4 fl-1">
+              1 văn bằng bảo hộ
+            </div>
+            <div class="border-black  fl-1 text-center">100.000đ</div>
+          </div>
+
+          <div class="d-flex">
+            <div class="border-black bd-r-none fl-2">
+              <div style="display: flex; align-items: center; padding-left: 4px;">
+                <span class="custom-checkbox" style="margin-bottom: 18px;"></span>
+                <span style="margin-left: 3px"
+                  >  Phí công bố quyết định ghi nhận chuyển nhượng quyền sở hữu công 
+                  nghiệp  </span
+                >
+              </div>
+            </div>
+            <div class="border-black bd-r-none pl-4 fl-1">
+              quyết định
+            </div>
+            <div class="border-black  fl-1 text-center">100.000đ</div>
+          </div>
+
+          <div class="d-flex">
+            <div class="border-black bd-r-none fl-2">
+              <div class="fw-600 p-4 fl-1" style="font-style: italic" style="display: flex; align-items: center; padding-left: 4px;">
+                Tổng số phí, lệ phí nộp theo đơn là:
+              </div>
+            </div>
+            <div class="border-black bd-l-none bd-r-none pl-6 fl-1">
+              
+            </div>
+            <div class="border-black fw-600  fl-1 text-center">600.000đ</div>
+          </div>
+
+      
+
+          <div class="border-black p-4">
+            Số chứng từ (trường hợp nộp phí, lệ phí qua dịch vụ bưu chính hoặc
+            nộp trực tiếp vào tài khoản của cơ quan quản lý nhà nước về quyền sở
+            hữu công nghiệp):
+          </div>
+        </div>
+        <div class="d-flex border-black">
+          <div class="relative fl-2 p-4">
+            <div class="circle-number">6</div>
+            <div class="text-center fw-600 mb-8">CÁC TÀI LIỆU CÓ TRONG ĐƠN</div>
+            <div class="pt-12">
+             
+              <div class="d-flex-start mb-4">
+                <div class="custom-checkbox mb-2"></div>
+                <div>Tờ khai, gồm.......trang</div>
+              </div>
+              <div class="d-flex-start mb-4">
+                <div class="custom-checkbox mb-2"></div>
+                <div> Hợp đồng chuyển nhượng, bằng tiếng…….gồm…….trang </div>
+              </div>
+
+              <div class="d-flex">
+                <div class="fl-1 pl-4">
+                  <div style="display: flex; align-items: center; padding-left: 25px;">
+                    <span class="custom-checkbox" ></span>
+                    <span style="margin-left: 3px"
+                      >  Bản gốc  </span
+                    >
+                  </div>
+                </div>
+                <div class="fl-1 pl-4">
+                  <div style="display: flex; align-items: center; padding-left: 25px;">
+                    <span class="custom-checkbox" ></span>
+                    <span style="margin-left: 3px"
+                      >  Bản sao  </span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex-start mb-4">
+                <div class="custom-checkbox mb-2"></div>
+                <div>Bản dịch hợp đồng ra tiếng Việt, gồm…… trang </div>
+              </div>
+
+              <div class="d-flex-start mb-4">
+                <div class="custom-checkbox mb-2" style="margin-bottom: 18px;"></div>
+                <div>Văn bản đồng ý của các đồng chủ sở hữu (trong trường hợp đối tượng 
+                  sở hữu công nghiệp thuộc sở hữu chung), gồm…….trang  </div>
+              </div>
+
+              <div class="d-flex-start mb-4">
+                <div class="custom-checkbox mb-2" style="margin-bottom: 18px;"></div>
+                <div> Tài liệu chứng minh quyền nộp đơn của bên nhận chuyển nhượng 
+                  đối với nhãn hiệu chứng nhận, nhãn hiệu tập thể
+                    </div>
+              </div>
+
+
+              <div class="d-flex-start mb-4">
+                <div class="custom-checkbox mb-2" style="margin-bottom: 18px;"></div>
+                <div>Quy chế sử dụng nhãn hiệu tập thể, quy chế sử dụng nhãn hiệu chứng 
+                  nhận của Bên nhận chuyển nhượng
+                    </div>
+              </div>
+
+              <div class="d-flex-start mb-4">
+                <div class="custom-checkbox mb-2"></div>
+                <div> Bản gốc văn bằng bảo hộ
+                </div>
+              </div>
+
+              <div class="d-flex-start mb-4 ml-14">
+                (<div class="custom-checkbox mb-2"></div>
+                <div>bản gốc đã nộp theo đơn số:……………………………….)</div>
+              </div>
+
+              
+
+              <div class="d-flex-start mb-4">
+                <div class="custom-checkbox mb-2"></div>
+                <div>Văn bản uỷ quyền bằng tiếng........</div>
+              </div>
+
+              <div class="d-flex-start mb-4 ml-14">
+                <div class="custom-checkbox mb-2"></div>
+                <div>bản dịch tiếng Việt, gồm.......trang</div>
+              </div>
+              <div class="d-flex-start mb-4 ml-14">
+                <div class="custom-checkbox mb-2"></div>
+                <div>bản gốc</div>
+              </div>
+              <div class="d-flex-ss mb-4 ml-14">
+                <div class="custom-checkbox mt-1">X</div>
+                <div class="no-wrap">bản sao</div>
+                <span class="ml-2 mr-4">(</span>
+                <div>
+                  <div class="d-flex-start mb-4">
+                    <div class="custom-checkbox mb-2"></div>
+                    <div class="no-wrap">bản gốc sẽ nộp sau</div>
+                  </div>
+                  <div class="d-flex-start mb-4">
+                    <div class="custom-checkbox mb-2"></div>
+                    <div class="no-wrap">
+                      bản gốc đã nộp theo đơn số:..............................)
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex-start mb-4">
+                <div class="custom-checkbox mb-2" style="margin-bottom: 32px;"></div>
+                <div>Bản sao chứng từ nộp phí, lệ phí (trường hợp nộp phí, lệ phí qua dịch 
+                  vụ bưu chính hoặc nộp trực tiếp vào tài khoản của cơ quan quản lý nhà 
+                  nước về quyền sở hữu công nghiệp)
+                  </div>
+              </div>
+
+              <div class="d-flex-start mb-4">
+                <div class="custom-checkbox mb-2"></div>
+                <div>Tài liệu khác, cụ thể:
+                  </div>
+              </div>
+        
+            </div>
+          </div>
+          <div class="fl-1 bd-l-black p-4">
+            <div class="text-center fw-600">KIỂM TRA DANH MỤC TÀI LIỆU</div>
+            <div class="text-center"><i>(Dành cho cán bộ nhận đơn)</i></div>
+            <div class="relative">
+              <div>
+                <div class="d-flex-start mb-6" style="margin-top: 12px">
+                  <div class="custom-checkbox mb-2">X</div>
+                </div>
+                <div class="d-flex-start mb-6">
+                  <div class="custom-checkbox mb-2">X</div>
+                </div>
+                <div class="d-flex-start mb-6">
+                  <div class="custom-checkbox mb-2">X</div>
+                </div>
+                <div class="d-flex-ss mb-6" style="margin-bottom: 59px">
+                  <div class="custom-checkbox">X</div>
+                </div>
+                <div class="d-flex-start mb-6">
+                  <div class="custom-checkbox mb-2">X</div>
+                </div>
+                <div class="d-flex-start mb-6">
+                  <div class="custom-checkbox mb-2">X</div>
+                </div>
+                <div class="d-flex-start mb-6">
+                  <div class="custom-checkbox mb-2">X</div>
+                </div>
+                <div class="d-flex-ss mb-6">
+                  <div class="custom-checkbox mt-1">X</div>
+                </div>
+                <div class="d-flex-start mb-10">
+                  <div class="custom-checkbox mb-2">X</div>
+                </div>
+
+                <div class="d-flex-start mb-6">
+                  <div class="custom-checkbox mb-2">X</div>
+                </div>
+                <div class="d-flex-start mb-6">
+                  <div class="custom-checkbox mb-2">X</div>
+                </div>
+                <div class="d-flex-ss mb-6">
+                  <div class="custom-checkbox mt-1">X</div>
+                </div>
+                <div class="d-flex-start mb-6">
+                  <div class="custom-checkbox mb-2">X</div>
+                </div>
+                <div class="d-flex-start">
+                  <div class="custom-checkbox mb-2">X</div>
+                </div>
+              </div>
+              <div
+                class="border-black"
+                style="
+                  height: 200px;
+                  width: 150px;
+                  position: absolute;
+                  bottom: -10px;
+                  right: -5px;
+                "
+              >
+                <div class="text-center mt-8 mb-12">Cán bộ nhận đơn</div>
+                <div class="text-center"><i>(ký và ghi rõ họ tên)</i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border-black relative p-4">
+          <div class="circle-number">7</div>
+          <div class="text-center fw-600">CAM KẾT CỦA NGƯỜI NỘP ĐƠN</div>
+          <div class="mt-8">
+            Tôi cam đoan mọi thông tin trong tờ khai trên đây là trung thực,
+            đúng sự thật và hoàn toàn chịu trách nhiệm trước pháp luật.
+          </div>
+          <div class="d-flex mt-8">
+            <div class="fl-1"></div>
+            <div class="fl-1">
+              <div class="text-center mb-2">
+                <i>Khai tại: ..................... ngày ... tháng ... năm ...</i>
+              </div>
+              <div class="text-center mb-2">
+                Chữ ký, họ tên người nộp đơn/đại diện của người nộp đơn
+              </div>
+              <div class="text-center mb-2 fs-12" style="margin-bottom: 140px">
+                <i>(ghi rõ chức vụ và đóng dấu, nếu có)</i>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+  </body>
+</html>
