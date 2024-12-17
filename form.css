@@ -54,9 +54,17 @@
   border-left: none;
 }
 
+.bd-t-none {
+  border-top: none;
+}
 .bd-b-none {
-        border-bottom: none;
-      }
+  border-bottom: none;
+}
+
+.dotted-border {
+  border-bottom: 1px black dotted ; 
+}
+
 
 .index-note {
   margin-top: -2px;
@@ -253,12 +261,17 @@
   padding-left: 25px !important;
 }
 
+
 .p-4 {
   padding: 4px;
 }
 
 .p-8 {
   padding: 8px;
+}
+
+.pl-3 {
+  padding-left: 3px;
 }
 
 .pl-4 {
@@ -269,6 +282,10 @@
   padding-left: 6px;
 }
 
+.pr-1 {
+  padding-right: 1px;
+}
+
 .pr-4 {
   padding-right: 4px;
 }
@@ -277,6 +294,9 @@
   padding-top: 4px;
 }
 
+.pb-0 {
+  padding-bottom: 0;
+}
 .pb-2 {
   padding-bottom: 2px;
 }
