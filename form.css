@@ -47,6 +47,8 @@
 
 .border-dotted {
   border-bottom: 1px dotted black !important;
+  border-left: 1px solid black !important;
+  border-right: 1px solid black !important;
 }
 
 .bd-b-black {
