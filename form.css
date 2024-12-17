@@ -8,15 +8,22 @@
   bottom: 0; */
   margin-top: 150px;
   width: 100%;
-  font-size: 12px;
+  font-size: 10px;
   color: #333;
 }
 
 .pdf-box {
-  width: 190mm;
+  /* width: 190mm;
   size: A4;
   background-color: #ffffff;
-  font-size: 14px;
+  font-size: 14px; */
+  width: 210mm; /* Full A4 width */
+    height: 297mm; /* Full A4 height */
+    margin: 0;
+    padding: 10mm;
+    page-break-inside: avoid;
+    background-color: #fff;
+    font-size: 12px;
 }
 
 .border-black {
@@ -358,8 +365,9 @@
   left: 5px;
   border: 2px solid black;
   border-radius: 50%;
-  width: 18px;
-  height: 18px;
+  width: 15px;
+  height: 15px;
+  font-size: 10px;
   font-weight: 700;
   display: flex;
   justify-content: center;
