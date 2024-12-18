@@ -13,17 +13,13 @@
 }
 
 .pdf-box {
-  /* width: 190mm;
+  width: 190mm;
   size: A4;
-  background-color: #ffffff;
-  font-size: 14px; */
-  width: 210mm; /* Full A4 width */
-    height: 297mm; /* Full A4 height */
-    margin: 0;
-    padding: 10mm;
-    page-break-inside: avoid;
-    background-color: #fff;
-    font-size: 12px;
+  margin: 0;
+  padding: 10mm;
+  page-break-inside: avoid;
+  background-color: #fff;
+  font-size: 12px;
 }
 
 .border-black {
@@ -46,8 +42,8 @@
 }
 
 .border-dotted {
-  border-bottom: 1px dotted black ;
-  border-right: 1px solid black ;
+  border-bottom: 1px dotted black;
+  border-right: 1px solid black;
 }
 
 .bd-b-black {
@@ -70,9 +66,8 @@
 }
 
 .dotted-border {
-  border-bottom: 1px black dotted ; 
+  border-bottom: 1px black dotted;
 }
-
 
 .index-note {
   margin-top: -2px;
@@ -269,7 +264,6 @@
   padding-left: 25px !important;
 }
 
-
 .p-4 {
   padding: 4px;
 }
@@ -391,8 +385,7 @@
   justify-content: flex-start;
   position: absolute;
   right: 10px;
-  top: 35%;
-  transform: translateY(-45%);
+  top: 25%;
   transform: translateX(8.5%);
   align-items: center;
   padding-left: 3px;
